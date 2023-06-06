@@ -3,17 +3,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import ClassComponent from './src/class-component';
 import FunctionComponent from './src/function-component';
 
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <ClassComponent/>
-      <FunctionComponent />
+      <ClassComponent text="Class Component" />
+      <FunctionComponent text="Function Component" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     color: 'white',
     marginBottom: 20,
     textAlign: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
     alignItems: 'center'
-    },
-})
+  },
+});
